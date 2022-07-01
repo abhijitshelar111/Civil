@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="keywordstestng.Invocationcountuse">
+       <methods>
+        <exclude name="openbrowser"/>
+       </methods>
+      </class>
+      <class name="keywordstestng.Enabled"/>
+      <class name="keywordstestng.Timeout"/>
+      <class name="keywordstestng.Dependsonmethod">
+       <methods>
+         <include name="s"/>
+         <include name="t"/>
+       </methods>
+      </class>
+      <class name="keywordstestng.Priority"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
